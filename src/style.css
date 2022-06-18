@@ -1,0 +1,119 @@
+body{
+    font-size: 100px;
+    /* background-color: #eecc2f; */
+}
+
+#psyduck{
+    border: 1px solid red;
+    width: 3.6em;
+    height: 4em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#psyduck > .hair-wrapper{
+    /* border: 1px solid black; */
+    width: 100px;
+    height: 100px;
+    /* z-index: 10; */
+    /* background-color: black; */
+    position: absolute;
+    top: .75em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+    display: flex;
+    justify-content: center;
+}
+#psyduck > .hair-wrapper > .hair{
+    /* border: 1px solid black; */
+    background-color: black;
+    width: .05em;
+    height: .2em;
+}
+#psyduck > .hair-wrapper > .hair:first-child{
+    transform: rotate(-40deg) translate(-0.03em,0);
+}
+#psyduck > .hair-wrapper > .hair:last-child{
+    transform: rotate(40deg) translate(0.03em,0);
+}
+
+#psyduck > .head{
+    /* border: 1px solid green; */
+    width: 1.5em;
+    height: 1.2em;
+
+    position: absolute;
+    top:1.0em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 50%;
+
+    background-color: #eecc2f;
+}
+
+#psyduck > .body{
+    border: 1px solid green;
+    width: 2em;
+    height: 2em;
+
+    position: absolute;
+    top:2.4em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 45%;
+
+    background-color: #eecc2f;
+}
+
+
+#psyduck .eye{
+    position: absolute;
+    /* border: 1px solid red; */
+    width: 100%;
+    height: .5em;
+
+}
+#psyduck .eye > div{
+    /* border: 1px solid red; */
+
+    width: 0.35em;
+    height: 0.28em;
+    border-radius: 50%;
+    background-color: #fff;
+
+    position: absolute;
+    top: 0.3em;
+}
+#psyduck .eye .left{
+    left: 15%;
+    transform: rotate(-26deg);
+}
+#psyduck .eye .right{
+    right: 15%;
+    transform: rotate(26deg);
+}
+
+#psyduck .eye .left.dot,
+#psyduck .eye .right.dot{
+    width: 0;
+    height: 0;
+    border: 2px solid black;
+    border-radius: 100%;
+    position: absolute;
+    top: .4em;
+}
+
+#psyduck .eye .left.dot{
+    left: .35em;
+
+}
+
+#psyduck .eye .right.dot{
+    right: .35em;
+}
